@@ -4,7 +4,7 @@
 This data pipeline collects, processes, and analyses global earthquake data from the USGS Earthquake API using Microsoft Fabric. The workflow extracts raw GeoJSON event data into a Fabric Lakehouse, refines it through a medallion (Bronze → Silver → Gold) architecture using PySpark notebooks, enriches each event with reverse-geocoded country codes and a significance classification, and orchestrates the whole process on a daily schedule with Fabric Data Factory. The end goal is a curated Delta table that feeds Power BI for interactive geospatial reporting.
 
 ## Architecture
-![Architecture](docs/images/architecture.png)
+![Architecture](docs/architecture.png)
 
 ## Data Flow
 1. **Data Extraction:** A Fabric notebook calls the USGS FDSN Event API for a parameterised date range and lands the raw event features as JSON in the Lakehouse `Files` section.
