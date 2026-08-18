@@ -198,7 +198,7 @@ start_date: @formatDateTime(addDays(utcNow(), -7), 'yyyy-MM-dd')
 end_date:   @formatDateTime(utcNow(), 'yyyy-MM-dd')
 ```
 
-![Pipeline](docs/images/pipeline.png)
+![Pipeline](docs/pipeline.png)
 
 Two configuration details matter on a small capacity:
 
