@@ -221,7 +221,7 @@ Because significance is long-tailed (1 to ~2,790), raw values make almost every 
 Sqrt Significance = SQRT(MAX('earthquake_events_gold'[significance]))
 ```
 
-![Power BI Report](docs/images/earthquake-report.png)
+![Power BI Report](docs/earthquake.png)
 
 ## Repository Structure
 ```
